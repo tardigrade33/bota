@@ -1,0 +1,9 @@
+#comment
+repeat=1
+unlockpw 1994
+open whatsapp
+search joice
+wait 1
+send lol
+close whatsapp
+lock device

@@ -1,0 +1,11 @@
+main        -> assignments expressions
+assignments -> empty
+assignments -> assignments assignment
+assignment  -> app EQUALS number
+expressions -> empty
+expressions -> expressions expression
+expression  -> action app | action number
+action      -> SEND | UNLOCKPW | LOCK | WAIT | SEARCH | OPEN | CLOSE
+action      -> ACTION
+app         -> APP
+
