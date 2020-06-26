@@ -18,10 +18,10 @@ def begin(argv):
 
     if len(argv) > 1:
         with open(argv[1], 'r') as f:
-            result = parser.parse(lexer.lex(f.read()))
-            # pylint: disable=maybe-no-member
-            result.eval()
-            
+            source = f.read()
+            tokens = lexer.lex(source)
+            expression = parser.parse(tokens)
+            expression.eval()    
     else:
         print("Please provide a filename.")
 
